@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
       transform: translate(-50%, -50%);
       width: 60%;
       padding: 1rem;
-      background-color: ${COLORS.PRIMARY + "d0"};
+      background-color: ${COLORS.GREY + "d0"};
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         top: 120px;
@@ -126,20 +126,20 @@ export const Wrapper = styled.div`
     }
   }
 
-  .artists {
+  .art {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 2rem 5%;
-    background-color: ${({ artistsColor = COLORS.PRIMARY }) =>
-      `${artistsColor}`};
+    background-color: ${({ artColor = COLORS.GREY }) =>
+      `${artColor}`};
 
     h2 {
       font-family: ${FONT_FAMILIES.TITLE};
       font-size: 3rem;
-      color: white;
+      color:${COLORS.TERTIARY};
       text-transform: uppercase;
       margin-bottom: 3rem;
 
@@ -149,7 +149,7 @@ export const Wrapper = styled.div`
       }
     }
 
-    .artist-items {
+    .art-items {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -160,7 +160,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const Artist = styled(Link)`
+export const Art = styled(Link)`
   display: flex;
   position: relative;
   width: 22vw;
@@ -178,7 +178,7 @@ export const Artist = styled(Link)`
   &:hover {
     transform: scale(1.05);
 
-    .artist-info {
+    .art-info {
       height: 100%;
       background-color: ${COLORS.TERTIARY + "c0"};
 
@@ -188,7 +188,7 @@ export const Artist = styled(Link)`
     }
   }
 
-  .artist-info {
+  .art-info {
     display: flex;
     flex-direction: column;
     position: absolute;
