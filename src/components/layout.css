@@ -4,8 +4,8 @@ html {
   font: Roboto, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
-  background-color: white ;
-  color:black;
+  background-color: #242124 ;
+  color:white;
 }
 body {
   margin: 0;

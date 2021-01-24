@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
-import {Wrapper , Image , BottomEdgeDown,BottomEdgeUp, Art} from "./pageStyles/pageStyles"
+import {Wrapper , Image , BottomEdgeDown,BottomEdgeUp, } from "./pageStyles/pageStyles"
 import {Link , useStaticQuery , graphql} from "gatsby"
 import { COLORS} from "../constants"
+import SEO from "../components/Seo"
 
  
 
@@ -39,16 +40,17 @@ const AboutUsPage = () => {
 `)
 
 return <Layout>
-    <Wrapper descriptionColor={COLORS.PRIMARY}>
+     <SEO title="about-us"/>
+    <Wrapper descriptionColor={COLORS.BLACK}>
         <div className="banner">
             <Image fluid={aboutUsPageHeaderPicture.imageFile.childImageSharp.fluid} alt={aboutUsPageHeaderPicture.altText}/>
-            <BottomEdgeDown color={COLORS.PRIMARY}/>
+            <BottomEdgeDown color={COLORS.GREY}/>
         </div>
         <div className="description">
             <h2>About US</h2>
 
             <p>{aboutUsPageDescription}</p>
-            <BottomEdgeUp color={COLORS.BLACK}/>
+            <BottomEdgeUp color={COLORS.GREY}/>
         </div>
 
     </Wrapper>
