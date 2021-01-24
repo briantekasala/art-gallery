@@ -69,7 +69,7 @@ const IndexPage = () => {
 
   return(
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home"/>
     <Wrapper>
       <div className="banner">
         <Image 
@@ -102,7 +102,6 @@ const IndexPage = () => {
         </div>
       </div>
     </Wrapper>
-   
   </Layout>
   )
 }

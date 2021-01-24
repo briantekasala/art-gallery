@@ -12,7 +12,7 @@ const {
   wpcontent: {menuItems},
 } = useStaticQuery(graphql`
 query {
-  logo:file(relativePath: {eq: "ART2.png"}) {
+  logo:file(relativePath: {eq: "ART1_1.png"}) {
     childImageSharp{
       fixed(quality:100,width:200){
         ...GatsbyImageSharpFixed_withWebp
