@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
 import {Wrapper , Image , BottomEdgeDown,BottomEdgeUp, Art, } from "./pageStyles/pageStyles"
-import {Link , useStaticQuery , graphql} from "gatsby"
+import {  useStaticQuery , graphql} from "gatsby"
 import { COLORS} from "../constants"
 import SEO from "../components/Seo"
+
 
 
 const ArtGalleryPage = () => {
@@ -94,7 +95,7 @@ const ArtGalleryPage = () => {
                      artMeta.map(({node:{artMeta,slug}})=>(
                          <Art to={`/${slug}`} key={slug}>
                              <Image fluid={artMeta.artImages.imageFile.childImageSharp.fluid} alt={artMeta.artImages.altText}/>
-                             <div className="art-info">
+                             <div key={slug} className="art-info">
                                  <p>{artMeta.artName}</p>
                                  <p>{artMeta.artPainterFirstname} {artMeta.artPainterLastname}</p>
                              </div>

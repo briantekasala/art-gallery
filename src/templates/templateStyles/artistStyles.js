@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   background-color: ${COLORS.BLACK};
   margin-top: 100px;
 
-  .artist-container {
+  .art-container {
     display: flex;
     margin: 3rem auto;
     width: 90%;
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
       flex-direction: column;
     }
 
-    .artist-image {
+    .art-image {
       position: relative;
       width: 40vw;
       height: 40vw;
@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
         flex-direction: column;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        color: ${COLORS.SECONDARY};
+        color: ${COLORS.TERTIARY};
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         background-color: ${COLORS.GREY};
@@ -53,11 +53,12 @@ export const Wrapper = styled.div`
       }
     }
 
-    .artist-info {
+    .art-info {
       display: flex;
       flex-direction: column;
       width: 60vw;
       padding: 1.5rem 2rem;
+     
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         width: 100%;
@@ -71,7 +72,7 @@ export const Wrapper = styled.div`
         padding-bottom: 1rem;
         margin-left: auto;
         margin-bottom: 0.5rem;
-
+        
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           margin-right: auto;
           margin-left: 0;
@@ -81,7 +82,7 @@ export const Wrapper = styled.div`
 
       h3 {
         font-family: ${FONT_FAMILIES.TITLE};
-        color: ${COLORS.SECONDARY};
+        color: ${COLORS.WHITE};
         font-size: 1.8rem;
         text-transform: uppercase;
         margin-left: auto;
@@ -115,7 +116,7 @@ export const Wrapper = styled.div`
     }
   }
 
-  .artist-pictures {
+  .art-pictures {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -125,7 +126,7 @@ export const Wrapper = styled.div`
       flex-direction: column;
     }
 
-    .artist-picture {
+    .art-picture {
       width: 28.5vw;
       height: 57vw;
       margin: 0 1vw;
