@@ -7,7 +7,7 @@ import { COLORS} from "../constants"
 import SEO from "../components/Seo"
 
 
-const Contact = ()=> {
+const ContactPage = ()=> {
     const {
         wpcontent:{
             page:{
@@ -95,4 +95,4 @@ const Contact = ()=> {
 
 }
 
-export default Contact
+export default ContactPage
