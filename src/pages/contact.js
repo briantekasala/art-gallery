@@ -1,10 +1,10 @@
 import React from "react"
 import {RiMailSendFill,RiPhoneFill,RiUserLocationLine} from "react-icons/ri"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import {Wrapper , Image , BottomEdgeDown,BottomEdgeUp, } from "./pageStyles/pageStyles"
 import {Link , useStaticQuery , graphql} from "gatsby"
 import { COLORS} from "../constants"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 
 
 const ContactPage = ()=> {
